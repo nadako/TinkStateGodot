@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd3kcvio3x8qy"]
+
+[ext_resource type="Script" path="res://test.gd" id="1_7wxro"]
+
+[node name="Test" type="VBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+offset_right = 74.0
+offset_bottom = 58.0
+script = ExtResource("1_7wxro")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="TextEdit" type="TextEdit" parent="."]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "Value is: %s"
+placeholder_text = "Enter template"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+text = "Increase"
+
+[node name="UnbindButton" type="Button" parent="."]
+layout_mode = 2
+text = "Unbind"
